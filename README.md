@@ -1,2 +1,2 @@
-# nastyaignatyeva_school
+# nastyaignatyeva_school_lp
 Nastya Ignatyeva School Landingpage
