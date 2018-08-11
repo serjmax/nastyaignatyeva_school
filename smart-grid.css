@@ -1,3 +1,5 @@
+/* https://vladocar.github.io/SMART-CSS-GRID/ */
+
 .main {
     display: grid;
     grid-gap: 10px;
@@ -5,11 +7,13 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1280px;
+    background-color: aqua;
 }
 
 .one, .two, .three, .four, .five, .six,
 .seven, .eight, .nine, .ten, .eleven, .twelve {
     grid-column-end: span 12;
+    background-color: blueviolet;
 }
 
 .nested {
