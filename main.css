@@ -1,4 +1,137 @@
-.hi {
-  color: red;
+/* Basic styles*/
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+* {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+@media only screen and (max-width: 481px) {
+  /* Basic styles*/
+  h2 {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 48px;
+    font-size: 36px;
+    color: #000000;
+  }
+  .p_size_big {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 6px;
+  }
+  .p_size_small {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 6px;
+  }
+  /* top-bar */
+  .top-bar .enroll {
+    position: absolute;
+    float: left;
+    background: #FFF500;
+    -webkit-box-shadow: inset 0px -3px 0px #F2C94C;
+            box-shadow: inset 0px -3px 0px #F2C94C;
+    border-radius: 3px;
+    border: none;
+    padding: 4px 8px 4px 8px;
+    cursor: pointer;
+  }
+  .top-bar .enroll span {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    color: #000000;
+  }
+  .top-bar__nav {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 60px;
+  }
+  .top-bar__nav .icon {
+    background-image: url(./img/menu.svg);
+    width: 34px;
+    height: 18px;
+  }
+  .top-bar__nav span {
+    font-size: 12px;
+  }
+  .top-bar__nav li {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 34px;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .top-bar__nav ul {
+    position: relative;
+    top: 56px;
+    display: none;
+  }
+  .top-bar__button {
+    float: right;
+  }
+  .top-bar__nav.open .ul {
+    display: block;
+  }
+  /* screen: annotation */
+  .annotation .title {
+    height: 100px;
+  }
+  .annotation h2 {
+    position: relative;
+    top: -100px;
+  }
+  .annotation .annotation__oval {
+    background-image: url(./img/Ellipse.svg);
+    width: 122px;
+    height: 122px;
+    overflow: hidden;
+    position: relative;
+    left: -60px;
+    z-index: 0;
+  }
+  /* about-me */
+  .about-me .about-me__img {
+    background-image: url(./img/photo.jpg);
+    background-size: cover;
+    height: 70vh;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
