@@ -28,11 +28,15 @@ html {
 
 @media only screen and (max-width: 481px) {
     /* Basic styles*/
+    h1 {
+        font-size: 20vw;
+        line-height: 18vw;
+    }
     h2 {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
-        line-height: 48px;
+        line-height: 34px;
         font-size: 36px;
         color: #000000;
     }
@@ -56,8 +60,9 @@ html {
     }
     /* top-bar */
     .top-bar {
-        // display: flex;
-        // justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
         .enroll {
             position: absolute;
             float: left;
@@ -66,6 +71,7 @@ html {
             border-radius: 3px;
             border: none;
             padding: 4px 8px 4px 8px;
+            margin: 16px;
             cursor: pointer;
             span {
                 font-style: normal;
@@ -78,8 +84,7 @@ html {
     }
     .top-bar__nav {
         cursor: pointer;
-        position: relative;
-        padding-bottom: 60px;
+        padding: 16px;
         .icon {
             background-image: url(./img/menu.svg);
             width: 34px;
@@ -93,8 +98,8 @@ html {
             display: block;
             font-style: normal;
             font-weight: bold;
-            line-height: 34px;
-            font-size: 36px;
+            line-height: 30px;
+            font-size: 32px;
             color: #000000;
             margin-bottom: 20px;
         }
@@ -102,7 +107,11 @@ html {
             position: relative;
             top: 56px;
             display: none;
+            height: 100vh;
         }
+    }
+    .open{
+        background-color: aqua;
     }
     .top-bar__button {
         float: right;
