@@ -36,9 +36,12 @@ html {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
-        line-height: 34px;
+        line-height: 36px;
         font-size: 36px;
         color: #000000;
+    }
+    h3 {
+        font-size: 28px;
     }
     .p_size_big {
         font-family: Roboto;
@@ -57,6 +60,14 @@ html {
         font-size: 16px;
         color: #000000;
         margin-top: 6px;
+    }
+    .decoration-img{
+        display: block;
+        width: 122px;
+        height: 122px;
+        position: absolute;
+        z-index: -1;
+        left: -34px;
     }
     /* top-bar */
     .top-bar {
@@ -110,7 +121,7 @@ html {
             height: 100vh;
         }
     }
-    .open{
+    .open {
         background-color: aqua;
     }
     .top-bar__button {
@@ -120,6 +131,10 @@ html {
         .ul {
             display: block;
         }
+    }
+    /* title-screen */
+    .title-screen {
+        height: 100vh;
     }
     /* screen: annotation */
     .annotation {
@@ -148,6 +163,69 @@ html {
             height: 70vh;
             margin-left: -16px;
             margin-right: -16px;
+        }
+        span {
+            font-size: 20px;
+            padding: 0 15% 0 15%;
+            display: block;
+            font-weight: 300;
+        }
+        .first-quote {
+            background: url(./img/“”.svg);
+            width: 100px;
+            height: 75px;
+            position: relative;
+            top: 32px;
+            z-index: -1;
+        }
+        .last-quote {
+            background: url(./img/“”2.svg);
+            width: 100px;
+            height: 75px;
+            float: right;
+            position: relative;
+            bottom: 32px;
+            z-index: -1;
+        }
+    }
+    /* Course program */
+    .course-program {
+        .img {
+            background-image: url(./img/factoid.jpg);
+            width: 304px;
+            height: 108px;
+            margin-left: -16px;
+        }
+    }
+    /* Day makeup*/
+    .day-makeup {
+        // background-image: url(./img/Ellipse--day-makeup.svg);
+        // background-repeat: no-repeat;
+        // background-position-x: -60px;
+    }
+    /* Night makeup*/
+    .night-makeup {
+        background-color: #090070;
+        padding-top: 60px;
+        .twelve{
+            z-index: 1;
+        }
+        // background-image: url(./img/Ellipse--night-makeup.svg);
+        // background-position-x: -40px;
+        // background-position-y: 10px;
+        // background-repeat: no-repeat;
+        h2 {
+            color: #D0F1FF;
+        }
+        h3 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+        .decoration-img{
+            padding-top: 30px;
+            z-index: 0;
         }
     }
 }
